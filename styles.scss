@@ -1,0 +1,82 @@
+//reset
+@import './src/styles/components/reset';
+//componentes
+@import './src/styles/components/nav';
+@import './src/styles/components/home';
+
+  
+//varoables
+$background: #252422;
+$gray: #403d39;
+$gray-l: #ccc5b9;
+$acent: #eb5e28;
+$primary: #fffcf2;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $background;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    color: $primary;
+}
+h2{
+    font-size: 2rem;
+    color: $primary;
+}
+h3{
+    font-size: 1.5rem;
+    color: $primary;
+}
+a{
+    text-decoration: none;
+    color: $primary;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.5rem;
+    color: $primary;
+}
+ul{
+    list-style: none;
+}
+
+.navbar{
+    background-color: #25242263;
+}
+.checkbox__input:checked ~ .navbar{
+    background-color: #252422
+}
+
+.home__button{
+    background-color: $acent;
+    color: $primary;
+    border: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.home__container1-text-2{
+    color: $acent;
+}
+.home__container1-card{
+    background-color: $acent;
+}
+
+ 
+  
+
+ 
+
+ 
+  
+
+  
+
+  
+ 
+  
