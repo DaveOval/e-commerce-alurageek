@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Corrigiendo el espaciado de los bloques de elementos */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Estilizando elementos de lista */
+ol, ul {
+  list-style: none;
+}
+
+/* Corrigiendo la visualización de los hipervínculos */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Eliminando los contornos de los hipervínculos clicables */
+a:focus {
+  outline: none;
+}
+
+.navbar {
+  position: fixed;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.5s ease;
+  border-bottom: 1px solid white;
+}
+
+.navbar__logo {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar__btns {
+  display: none;
+}
+
+.navbar__links {
+  display: none;
+}
+.navbar__links li {
+  padding-top: 1rem;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:checked ~ .navbar__btns {
+  display: block;
+}
+
+.checkbox__input:checked ~ .navbar__links {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    border: none;
+  }
+  .checkbox__label {
+    display: none;
+  }
+  .navbar__logo {
+    width: 20%;
+  }
+  .navbar__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .navbar__links {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+  }
+  .navbar__links li {
+    padding-top: 0;
+  }
+}
+.home {
+  width: 100%;
+  height: 95vh;
+  background-image: url(./public/assets/img/keyboard.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home__container1 {
+  display: none;
+}
+
+.home__container2 {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.home__container2 button {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.home__container3 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    flex-direction: row;
+  }
+  .home__container1 {
+    width: 33%;
+    display: block;
+  }
+  .home__container2 {
+    width: 33%;
+  }
+  .home__container2 img {
+    height: 70vh;
+    transform: translatey(0);
+  }
+  .home__container3 {
+    display: block;
+    width: 33%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252422;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fffcf2;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fffcf2;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #fffcf2;
+}
+
+a {
+  text-decoration: none;
+  color: #fffcf2;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #fffcf2;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  background-color: rgba(37, 36, 34, 0.3882352941);
+}
+
+.checkbox__input:checked ~ .navbar {
+  background-color: #252422;
+}
+
+.home__button {
+  background-color: #eb5e28;
+  color: #fffcf2;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.home__container1-text-2 {
+  color: #eb5e28;
+}
+
+.home__container1-card {
+  background-color: #eb5e28;
+}/*# sourceMappingURL=styles.css.map */

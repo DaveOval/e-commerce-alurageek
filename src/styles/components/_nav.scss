@@ -1,0 +1,79 @@
+.navbar{
+    position: fixed;
+    height: fit-content;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid white;
+}
+.navbar__logo{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo img{
+    height: 40px;
+    width: 40px;
+}
+.material-symbols-outlined{
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar__btns{
+   display: none;
+}
+.navbar__links{
+   display: none;
+   li{
+    padding-top: 1rem;
+   }
+}
+.checkbox__input{
+    display: none;
+}
+.checkbox__input:checked ~ .navbar__btns{
+    display: block;
+}
+.checkbox__input:checked ~ .navbar__links{
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5rem;
+        border: none;
+    }
+    .checkbox__label{
+        display: none;
+    }
+    .navbar__logo{
+        width: 20%;
+    }
+    .navbar__btns{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+    .navbar__links{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+    }
+    .navbar__links li{
+        padding-top: 0;
+    }
+}
+
