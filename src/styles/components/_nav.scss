@@ -18,12 +18,9 @@
     justify-content: space-between;
     align-items: center;
 }
-.navbar__logo img{
-    height: 40px;
-    width: 40px;
-}
+
 .material-symbols-outlined{
-    font-size: 2rem;
+    font-size: 5rem;
     color: white;
 }
 
@@ -34,7 +31,9 @@
    display: none;
    li{
     padding-top: 1rem;
+    
    }
+   
 }
 .checkbox__input{
     display: none;
@@ -63,7 +62,7 @@
     .navbar__btns{
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 2.5rem;
         align-items: center;
     }
     .navbar__links{
@@ -71,6 +70,10 @@
         flex-direction: row;
         gap: 4rem;
         align-items: center;
+
+        a:hover{
+            text-decoration: underline #eb5e28;;
+           }
     }
     .navbar__links li{
         padding-top: 0;
