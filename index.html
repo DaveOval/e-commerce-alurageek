@@ -13,7 +13,7 @@
     <!-- Menu -->
     <nav class="navbar">
       <div class="navbar__logo">
-        <span class="material-symbols-outlined navbar__svg">keyboard_alt</span>
+        <a class="material-symbols-outlined navbar__svg" href="./index.html">keyboard_alt</a>
         <label for="menu" class="checkbox__label">
           <span class="material-symbols-outlined navbar__svg">menu</span>
         </label>
@@ -108,17 +108,20 @@
       <!-- Formulario de contacto -->
       <section class="contact">
         <div class="contact__container1">
-          <a href="">Quienes somos</a>
-          <a href="">Politica de privacidad</a>
-          <a href="">Programa de fidelidad</a>
+          <a href="">Abaout us</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Loyalty program</a>
           <a href="">Nuestras tiendas</a>
-          <a href="">Quiero ser franquiciado</a>
-          <a href="">Anuncue aqui</a>
+          <a href="">I want to be a franchisee</a>
+          <a href="">Advertise here</a>
         </div>
-        <form class="contact__container2">
+        <form class="contact__container2"
+          action="https://formsubmit.co/dave_u@outlook.com"
+          method="post"
+        >
           <p>Talk with us</p>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
+          <input type="text" name="name" id="name" required >
           <label for="textarea">Message</label>
           <textarea type="text" name="textarea" id="textarea" cols="10" maxlength="100" required></textarea>
           <button type="submit" class="contact__button">Send message</button>

@@ -26,7 +26,7 @@ const miModulo = (() => {
      * @param {Number} stock 
      * @param {String} type 
      */
-    constructor(title, price, img, stock = 0, type = 'no type') {
+    constructor(title = 'No title', price = 'No price', img = '1000_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF', stock = 0, type = 'no type') {
       this.id       = uuid();
       this.title    = title;
       this.price    = price;
@@ -55,14 +55,25 @@ const miModulo = (() => {
       
     ],
     keycaps:[
-      new Product('KEYCAPS RETRO ORANGE', 54.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
-      new Product('prueba 1', 523.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
-      new Product('prueba 2', 454.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
-      new Product('prueba 3', 541.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
-      new Product('prueba 5', 54213.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+      new Product('CANDY', 69.00, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/sweet-series-pbt-mechanical-keyboard-set.jpg?v=1670914924', 12 , 'keycaps'),
+      new Product('CANCER', 69.10, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/cancer-constellation-series-pbt-mechanical-keyboard-keycaps-set.jpg?v=1662369566', 43 , 'keycaps'),
+      new Product('GEMINI', 69.00, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/gemini-pbt-keycaps.jpg?v=1662368398', 15 , 'keycaps'),
+      new Product('AQUARIS', 69.50, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/aquarius-pbt-keycaps-set.jpg?v=1667288716', 24 , 'keycaps'),
+      new Product('PASTEL DREAMS', 50.00, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/Pastel-Dreams-pbt-keycap-set.jpg?v=1654584094', 11 , 'keycaps'),
+      new Product('UNIVESE VITALITY', 69.00, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/keygeak-Universe-series-keycap-set_3bc6fff8-03b3-4535-a5e0-49090058e8d5.jpg?v=1650246778', 6 , 'keycaps'),
+      new Product('BLUE- PINK GRADIENT', 69.99, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/blue-pink-gradient-pbt-tricolor-keycaps-set.jpg?v=1656041937', 15 , 'keycaps'),
+      new Product('CAPPUCCINO', 69.98, 'https://cdn.shopify.com/s/files/1/0440/6676/7015/products/cappuccino-brown-pbt-tricolor-mechanical-keyboard-keycaps-set.jpg?v=1659064739', 40 , 'keycaps'),
     ],
     switchs:[
-      new Product('Switchs', 1314, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+      new Product('Switch RED', 25, 'https://www.cherrymx.de/_Resources/Persistent/7/6/5/7/76578b2befb9aa6f6b73389c9afd6825f7ce84ba/GIF_MXRGB_Silent-Red.gif', 14 , 'keycaps'),
+      new Product('Switchs BLUE', 25, 'https://www.cherrymx.de/_Resources/Persistent/8/2/e/0/82e048237373b7ff396b8f766abeaa21f116a942/GIF_MXRGB_Blue.gif', 24 , 'keycaps'),
+      new Product('Switchs BLACK', 25, 'https://www.cherrymx.de/_Resources/Persistent/b/a/b/a/baba6c3fa6e129976b40b6b3534449f7db49230b/GIF_MXRGB_Std-Black.gif', 51 , 'keycaps'),
+      new Product('Switchs SILVER', 25, 'https://www.cherrymx.de/_Resources/Persistent/5/d/5/d/5d5d3d27a7049ae2d13150229240122630dd374d/GIF_MXRGB_Speed.gif', 55 , 'keycaps'),
+      new Product('Switchs BROWN', 25, 'https://www.cherrymx.de/_Resources/Persistent/e/a/b/2/eab22a5e10e07e5487817e5eaaa42db92950dfc3/GIF_MXRGB_Brown.gif', 13 , 'keycaps'),
+      new Product('Switchs GREEN', 40, 'https://www.cherrymx.de/_Resources/Persistent/f/a/f/a/fafa42f5c234c958a785c8b383c0e548a69f1044/GIF_MXGreen.gif', 48 , 'keycaps'),
+      new Product('Switchs GREY', 40, 'https://www.cherrymx.de/_Resources/Persistent/0/a/d/0/0ad0a1c2f568aa1b97912388c497fdd69969872d/GIF_MXGrey.gif',  12, 'keycaps'),
+      new Product('Switchs CLEAR', 40, 'https://www.cherrymx.de/_Resources/Persistent/9/d/c/1/9dc16af4915c37c9feff202ea9bd66d97f83f733/GIF_MXGrey_v004.gif', 0 , 'keycaps'),
+    
     ],
     filter: Filters.All
   }
