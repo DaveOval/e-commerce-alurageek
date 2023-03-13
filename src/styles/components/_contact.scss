@@ -1,0 +1,83 @@
+.contact{
+    margin-top: 2rem;
+    width: 100%;
+    height: max-content;
+    padding: 2rem 0;
+    background-image: url(../e-commerce/public/assets/background/pattern.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact__container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    a:hover{
+        text-decoration: underline #eb5e28;
+    }
+}
+.contact__container2{
+    margin-top: 2rem;
+    width: 95%;
+    max-width: 500px;
+    height: max-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2rem 1rem;
+    background: rgba( 64, 61, 57, 0.3 );
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    p{
+        font-size: 1.7rem;
+        padding-bottom: 10px;
+    }
+    label{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: white;
+    }
+    input{
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    input:focus{
+        outline: none;
+        box-shadow: 1px 1px 5px 1px rgb(43, 43, 43);
+    }
+    textarea{
+        height: 12rem;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 768px){
+    .contact{
+        flex-direction: row;
+        background-size: cover;
+        background-position: top;
+    }
+    .contact__container1{
+        width: 95%;
+        max-width: 500px;
+        gap: 2rem;
+    }
+    .contact__container2{
+        width: 95%;
+        max-width: 500px;
+    }
+}

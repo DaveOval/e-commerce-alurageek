@@ -6,6 +6,7 @@ const miModulo = (() => {
   // Referencias HTML
   const contenedorTeclados = document.querySelector('#keyboard-container');
   const contenedorKeycaps = document.querySelector('#keycaps-container');
+  const contenedorSwitchs = document.querySelector('#switchs-container');
 
   // Filtros
   const Filters = {
@@ -54,7 +55,14 @@ const miModulo = (() => {
       
     ],
     keycaps:[
-      new Product('Hola mundo', 99, 'https://jsonplaceholder.typicode.com/todos/1', 123, 'keycaps'),
+      new Product('KEYCAPS RETRO ORANGE', 54.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+      new Product('prueba 1', 523.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+      new Product('prueba 2', 454.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+      new Product('prueba 3', 541.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+      new Product('prueba 5', 54213.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
+    ],
+    switchs:[
+      new Product('Switchs', 1314, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3626-2.jpg?v=1668625371&width=823', 0 , 'keycaps'),
     ],
     filter: Filters.All
   }
@@ -95,6 +103,7 @@ const miModulo = (() => {
   //Esta funcion sirve para renderizar los productos en el DOM
   renderProducts(contenedorTeclados, state.keyboard,);
   renderProducts(contenedorKeycaps, state.keycaps, );
+  renderProducts(contenedorSwitchs, state.switchs, );
 
 
 })();

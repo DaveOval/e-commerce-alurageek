@@ -5,6 +5,7 @@
 @import './src/styles/components/home';
 @import './src/styles/components/galerys';
 @import './src/styles/components/login';
+@import './src/styles/components/contact';
 
   
 //varoables
@@ -102,6 +103,25 @@ ul{
 .login__input{
     
     input{
+        background-color: $gray-l;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}
+input{
+    caret-color: $acent;
+}
+.login__tip{
+    color: $gray-l;
+}
+.contact{
+    
+    input{
+        background-color: $gray-l;
+        font-weight: 600;
+        font-size: 1.3rem;
+    } 
+    textarea{
         background-color: $gray-l;
         font-weight: 600;
         font-size: 1.3rem;

@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    margin-top: 10vh;
     padding: 20px;
 }
 .login__title{
@@ -28,6 +29,11 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 50px;
+}
+.login__tip{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
 }
 .login__input{
     width: 100%;
