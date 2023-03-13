@@ -39,7 +39,7 @@ const miModulo = (() => {
   // Storage de productos
   const state = {
     products: [
-      new Product('DE64R WITH RETRO', 175.99, '/public/assets/img/producst/DE64R-with-retro.png', 57, 'keyboard'),
+      new Product('DE64R WITH RETRO', 175.99, '../public/assets/img/producst/DE64R-with-retro.png', 57, 'keyboard'),
       new Product('DE61S WITH JAPONESE SAKURA', 147.93, '/public/assets/img/producst/DE61S-with-japanese.png', 16, 'keyboard'),
       new Product('YMD75 V3 QMK', 204.99, '/public/assets/img/producst/YMD75-V3-MQ.png', 99, 'keyboard'),
       new Product('DE63 WITH JAPANESE BOW ', 153.99, '/public/assets/img/producst/DE63-with-japonese-bow.png', 45, 'keyboard'),
