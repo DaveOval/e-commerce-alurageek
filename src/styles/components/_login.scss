@@ -1,0 +1,99 @@
+
+.login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login__form{
+    width: 95%;
+    max-width: 500px;
+    height: max-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+}
+.login__title{
+    font-size: 2.0rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.login__description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.login__input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    label{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: white;
+    }
+    input{
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    input:focus{
+        outline: none;
+        box-shadow: 1px 1px 5px 1px rgb(43, 43, 43);
+    }
+}
+.login__terms{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+    a{
+        color: #eb5e28;
+        font-size: 1.1rem;
+    }
+}
+.login__checkbox{
+    cursor: pointer;
+    
+}
+.login__button{
+    width: 100%;
+    height: 50px;
+    background-color: #eb5e28;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    &:active{
+        transform: scale(1.05);
+    }
+    &:hover{
+        background-color: white;
+        color: #eb5e28;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .login{
+        background-image: url(../e-commerce/public/assets/background/1.PNG);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+
+    
+

@@ -19,9 +19,8 @@
     align-items: center;
 }
 
-.material-symbols-outlined{
-    font-size: 5rem;
-    color: white;
+.navbar__svg{
+    font-size: 2.3rem !important;
 }
 
 .navbar__btns{
@@ -43,6 +42,9 @@
 }
 .checkbox__input:checked ~ .navbar__links{
     display: block;
+}
+.home__svg{
+    font-size: 7rem !important;
 }
 
 @media screen and (min-width: 768px){
@@ -70,13 +72,15 @@
         flex-direction: row;
         gap: 4rem;
         align-items: center;
-
         a:hover{
             text-decoration: underline #eb5e28;;
            }
     }
     .navbar__links li{
         padding-top: 0;
+    }
+    .home__svg{
+        font-size: 7rem !important;
     }
 }
 

@@ -4,6 +4,7 @@
 @import './src/styles/components/nav';
 @import './src/styles/components/home';
 @import './src/styles/components/galerys';
+@import './src/styles/components/login';
 
   
 //varoables
@@ -16,6 +17,9 @@ $primary: #fffcf2;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color: $background;
@@ -46,6 +50,9 @@ p{
 ul{
     list-style: none;
 }
+.material-symbols-outlined{
+    color: $primary;
+}
 
 .navbar{
     background-color: #25242263;
@@ -60,6 +67,14 @@ ul{
     border: none;
     font-size: 1.0rem;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    &:active{
+        background-color: $primary;
+        color: $acent;
+        transform: scale(1.1);
+    }
 }
 .home__container1-text-2{
     color: $acent;
@@ -75,9 +90,21 @@ ul{
 .product__card-img{
     background-color: $gray-l;
 }
-.prodct__card-description{
+.product__card-description{
     a{
+        padding-top: 10px;
         color: $acent;
+    }
+}
+.login__form{
+    background-color: $gray;
+}
+.login__input{
+    
+    input{
+        background-color: $gray-l;
+        font-weight: 600;
+        font-size: 1.3rem;
     }
 }
 

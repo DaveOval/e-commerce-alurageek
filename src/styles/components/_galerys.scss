@@ -15,9 +15,14 @@
     align-items: center;
     padding: 0 2.5rem;
 }
-
-
-
+.galery__products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 .product__card{
     width: 100%;
     height: 200px;
@@ -27,10 +32,15 @@
     justify-content: center;
     align-items: center;
 }
+.arrow{
+    font-size: 2rem !important;
+    
+}
 
 .product__card-img{
     flex-grow: 1;
     height: 100%;
+    width: 50%;
     background-color: red;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
@@ -41,31 +51,73 @@
         border-radius: 15px 0 0 15px;
     }
 }
-.prodct__card-description{
+.product__card-description{
     flex-grow: 1;
-    padding-top: 2rem;
     padding-left: 1rem;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    text-align: left;
-    font-size: 25px;
-    p{
-        font-size: 15px;
-    }
-    a{
-        text-align: center;
-        margin: auto;
-    }
 }
-.producto__card_text-title{
-    font-size: 25px;
+.product__card_text-title{
+    font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 5px;
+}
+.product__card_text-price{
+    font-weight: 200;
     margin-bottom: 10px;
 }
-.producto__card_text-price{
-    font-weight: 700;
-    margin-bottom: 10px;
+
+@media screen and (min-width: 768px){
+    .galery__products{
+        flex-direction: row;
+        max-width: 1500px;
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .galery__nav{
+        max-width: 1200px;
+        padding: 1rem 0;
+    }
+    .product__card{
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    .product__card-img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+    }
+    .product__card_text-title{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .product__card_text-price{
+        font-size: 1.9rem;
+        font-weight: 200;
+    }
+    .product__card-description{
+        padding-left: 0;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        a{
+            text-align: center;
+        }
+    }
 }
