@@ -18,6 +18,10 @@
     align-items: left;
     margin-top: 10vh;
     padding: 20px;
+    overflow: hidden;
+    background: rgba( 64, 61, 57, 0.5 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
 }
 .login__title{
     font-size: 2.0rem;
@@ -92,10 +96,10 @@
 
 @media screen and (min-width: 768px){
     .login{
-        background-image: url(../e-commerce/public/assets/background/1.PNG);
+        background-image: url(../e-commerce/public/assets/background/1.PNG); 
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;        
     }
     
 }

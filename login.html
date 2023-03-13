@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/keyboard.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | PersonalTyp</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar">
+      <a class="navbar__logo" href="/e-commerce/index.html">
+        <span class="material-symbols-outlined navbar__svg">keyboard_alt</span>
+        <label for="menu" class="checkbox__label">
+          <span class="material-symbols-outlined navbar__svg">menu</span>
+        </label>
+      <a/>
+
+
+      <input type="checkbox" name="menu" id="menu" class="checkbox__input">
+
+      
+      
+      <div class="navbar__btns">
+        <a class="navbar__btn" href="#" target="_blank" >
+          <span class="material-symbols-outlined navbar__svg" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">search</span>
+        </a>
+        
+      </div>
+      </nav>
+
+    <section class="login">
+      <div  class="login__form">
+        <form action="" >
+          <p class="login__title">PersonalTyp</p>
+          <p class="login__description">Sing up to PersonalTyp</p>
+          <div class="login__input">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required minlength="5" maxlength="50" pattern="[\sa-zA-Z]">
+            <p class="login__tip">Only letters</p>
+          </div>
+          <div class="login__input">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required min="5" maxlength="50" pattern="[A-Za-z0-9]+">
+            <p class="login__tip">letters and numbers</p>
+          </div>
+          <div class="login__input">
+            <label for="email">Email</label>
+            <input type="email" name="pemail" id="email" required minlength="5" max="15" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <p class="login__tip">letters and numbers</p>
+          </div>
+          <div class="login__input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="6+ characters" required minlength="8" max="15">
+            <p class="login__tip">letters and numbers</p>
+          </div>
+          <div class="login__terms">
+            <input type="checkbox" name="terms" id="terms" class="login__checkbox"/>
+            <label for="terms">Creating an account means you're okay with our <a>Terms of Service, Privacy Policy,</a> and our default <a>Notification Settings</a></label>
+          </div>
+
+          <button class="login__button">Create Account</button>
+        </form>
+        
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Code by <a href="https://github.com/DaveOval">David Vazquez</a></p>
+      <img src="./e-commerce/public/assets/dave_avatar.svg" alt="david vazquez">
+    </footer>
+
+
+
+    <!-- <script type="module" src="/main.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

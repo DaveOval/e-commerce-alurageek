@@ -6,6 +6,7 @@
 @import './src/styles/components/galerys';
 @import './src/styles/components/login';
 @import './src/styles/components/contact';
+@import './src/styles/components/footer';
 
   
 //varoables
@@ -21,6 +22,22 @@ $primary: #fffcf2;
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding: 10vh;
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #eb5e28 #403d39;
+  }
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #403d39;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #eb5e28;
+    border-radius: 0px;
+    border: 0px solid #ffffff;
+  }
 }
 body{
     background-color: $background;
@@ -98,7 +115,7 @@ ul{
     }
 }
 .login__form{
-    background-color: $gray;
+    // background-color: $gray;
 }
 .login__input{
     

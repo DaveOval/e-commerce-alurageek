@@ -8,8 +8,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: '/index.html',
-                keyboards: './src/html/keyboards.html',
-                login: './src/html/login.html',
+                keyboards: '/keyboards.html',
+                login: '/login.html',
             }
         },
     }
