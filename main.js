@@ -36,22 +36,25 @@ const miModulo = (() => {
     }
   }
 
-  // Storage de productos
+  // Storage de keyboardos
   const state = {
-    products: [
-      new Product('DE64R WITH RETRO', 175.99, '../public/assets/img/producst/DE64R-with-retro.png', 57, 'keyboard'),
-      new Product('DE61S WITH JAPONESE SAKURA', 147.93, '/public/assets/img/producst/DE61S-with-japanese.png', 16, 'keyboard'),
-      new Product('YMD75 V3 QMK', 204.99, '/public/assets/img/producst/YMD75-V3-MQ.png', 99, 'keyboard'),
-      new Product('DE63 WITH JAPANESE BOW ', 153.99, '/public/assets/img/producst/DE63-with-japonese-bow.png', 45, 'keyboard'),
-      new Product('DE61 WITH JAPANESE', 147.99, '/public/assets/img/producst/DE61C-with-japanese.png', 49, 'keyboard'),
-      new Product('DE64L WOOD', 223.99, '/public/assets/img/producst/DE64L-WOOD.png', 49, 'keyboard'),
-      new Product('YMD75 V3 QMK', 199.99, '/public/assets/img/producst/YMD75-v3-qmk.png', 56, 'keyboard'),
-      new Product('KF068 WITH PBT BLUE', 154.99, '/public/assets/img/producst/KF068-with-pbt.png', 16, 'keyboard'),
-      new Product('XD87', 207.99, '/public/assets/img/producst/XD87.png', 0, 'keyboard'),
-      new Product('DE64', 213.99, '/public/assets/img/producst/DE64C.png', 0, 'keyboard'),
-      new Product('KF068', 154.99, '/public/assets/img/producst/KF068.png', 89, 'keyboard'),
-      new Product('DE64R', 175.99, '/public/assets/img/producst/DE64R.png', 0, 'keyboard'),
+    keyboard: [
+      new Product('DE64R WITH RETRO ORANGE', 175.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3997.jpg?v=1665507155', 57, 'keyboard'),
+      new Product('DE61S WITH JAPONESE SAKURA', 147.93, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_20210907_175922.jpg?v=1631208322&width=1100', 16, 'keyboard'),
+      new Product('YMD75 V3 QMK', 204.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC5570.jpg?v=1666867743&width=1100', 99, 'keyboard'),
+      new Product('DE63 WITH JAPANESE BOW ', 153.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC6124.jpg?v=1666802063&width=1100', 45, 'keyboard'),
+      new Product('DE61 WITH JAPANESE CORAL', 147.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/1638994531630_7aa8b917-9aaa-4d4f-84bf-9da0725b63fa.jpg?v=1639224076&width=1100', 49, 'keyboard'),
+      new Product('DE64L WOOD', 223.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC1424.jpg?v=1660161267&width=1100', 49, 'keyboard'),
+      new Product('YMD75 V3 QMK', 199.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC5330.jpg?v=1664903168&width=1100', 56, 'keyboard'),
+      new Product('KF068 WITH PBT BLUE', 154.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC2052_c5fa7b40-c936-44ce-b9fd-716ad29a876a.jpg?v=1668676346&width=1100', 16, 'keyboard'),
+      new Product('XD87', 207.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC5484.jpg?v=1665479904&width=1100', 0, 'keyboard'),
+      new Product('DE64C', 213.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_3964.jpg?v=1641573909&width=1100', 0, 'keyboard'),
+      new Product('KF068', 154.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/DSC1731_4b4a099c-e7f2-44ec-8e9c-a26404e39584.jpg?v=1668704372&width=1100', 89, 'keyboard'),
+      new Product('DE64R', 175.99, 'https://cdn.shopify.com/s/files/1/0573/9610/1272/products/IMG_4146.jpg?v=1640870471&width=1100', 0, 'keyboard'),
       
+    ],
+    keycaps:[
+      new Product('Hola mundo', 99, 'https://jsonplaceholder.typicode.com/todos/1', 123, 'keycaps'),
     ],
     filter: Filters.All
   }
@@ -59,12 +62,12 @@ const miModulo = (() => {
   // Funciones
 
   // Funcion para crear un nuevo producto
-  const createProductHTML = (product) => {
-    if (!product) throw new Error('Product is required');
+  const createProductHTML = (keyboard) => {
+    if (!keyboard) throw new Error('Product is required');
 
-    const {title, price, img, stock} = product;
+    const {title, price, img, stock} = keyboard;
 
-    const htmlProduct = `
+    const htmlkeyboard = `
       <div class="product__card-img">
         <img src="${img}" alt="">
       </div>
@@ -76,21 +79,22 @@ const miModulo = (() => {
       </div>
     `;
     const divElement = document.createElement('div');
-    divElement.innerHTML = htmlProduct;
+    divElement.innerHTML = htmlkeyboard;
     divElement.classList.add('product__card');
 
     return divElement;
   }
 
   // Funcion para renderizar los productos
-  const renderProducts = (element, products = [], type) => {
+  const renderProducts = (element, keyboard = [], type) => {
     element.innerHTML = '';
-    products.forEach(product => {
-      element.append(createProductHTML(product))
+    keyboard.forEach(keyboard => {
+      element.append(createProductHTML(keyboard))
     });
   }
-  renderProducts(contenedorTeclados, state.products,);
-  renderProducts(contenedorKeycaps, state.products, );
+  //Esta funcion sirve para renderizar los productos en el DOM
+  renderProducts(contenedorTeclados, state.keyboard,);
+  renderProducts(contenedorKeycaps, state.keycaps, );
 
 
 })();
