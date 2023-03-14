@@ -8,9 +8,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: '/index.html',
-                keyboards: '/keyboards.html',
-                login: '/login.html',
-                jslogin: './src/js/login.js',
+                // keyboards: './src/html/keyboards.html',
+                login: './login.html',
+                loginjs: './src/js/login.js',
             }
         },
     }
