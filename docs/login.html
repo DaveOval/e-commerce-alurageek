@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
     
-    <link rel="stylesheet" href="./assets/styles-8882c2aa.css">
+    <link rel="stylesheet" href="./assets/styles-5d32d179.css">
   </head>
   <body>
     <!-- Menu -->
@@ -40,30 +40,29 @@
           <p class="login__description">Sing up to PersonalTyp</p>
           <div class="login__input">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" required minlength="5" maxlength="50" pattern="[\sa-zA-Z]">
-            <p class="login__tip">Only letters</p>
+            <input type="text" name="name" id="name" required minlength="5" maxlength="50" placeholder="only letters">
+            <p class="login__tip disabled" id="error1">Only letters</p>
           </div>
           <div class="login__input">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" required min="5" maxlength="50" pattern="[A-Za-z0-9]+">
-            <p class="login__tip">letters and numbers</p>
+            <input type="text" name="username" id="username" required min="5" maxlength="50" placeholder="letters and numbers">
+            <p class="login__tip disabled" id="error2">letters and numbers</p>
           </div>
           <div class="login__input">
             <label for="email">Email</label>
-            <input type="email" name="pemail" id="email" required minlength="5" max="15" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-            <p class="login__tip">letters and numbers</p>
+            <input type="email" name="pemail" id="email" required minlength="5" max="15" placeholder="no spaces">
+            <p class="login__tip disabled" id="error3">letters and numbers</p>
           </div>
           <div class="login__input">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="6+ characters" required minlength="8" max="15">
-            <p class="login__tip">letters and numbers</p>
+            <input type="password" name="password" id="password" placeholder="8+ characters" required >
+            <p class="login__tip disabled" id="error4">at least one uppercase letter, one lowercase letter, one number, and a minimum of 8 characters</p>
           </div>
           <div class="login__terms">
             <input type="checkbox" name="terms" id="terms" class="login__checkbox"/>
             <label for="terms">Creating an account means you're okay with our <a>Terms of Service, Privacy Policy,</a> and our default <a>Notification Settings</a></label>
           </div>
-
-          <button class="login__button">Create Account</button>
+          <button class="login__button disabled" id="btn_login" type="submit">Create Account</button>
         </form>
         
         

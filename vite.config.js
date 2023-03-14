@@ -10,6 +10,7 @@ export default defineConfig({
                 main: '/index.html',
                 keyboards: '/keyboards.html',
                 login: '/login.html',
+                jslogin: './src/js/login.js',
             }
         },
     }

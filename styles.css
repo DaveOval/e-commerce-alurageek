@@ -444,7 +444,19 @@ a:focus {
 .login__tip {
   font-size: 1.3rem;
   font-weight: 400;
-  color: white;
+  color: red;
+}
+
+.warging {
+  border: 2px solid red !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.disabled {
+  display: none;
 }
 
 .login__input {
@@ -759,10 +771,6 @@ ul {
 
 input {
   caret-color: #eb5e28;
-}
-
-.login__tip {
-  color: #ccc5b9;
 }
 
 .contact input {

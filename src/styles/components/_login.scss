@@ -37,7 +37,16 @@
 .login__tip{
     font-size: 1.3rem;
     font-weight: 400;
-    color: white;
+    color: red;
+}
+.warging{
+    border: 2px solid red !important;
+}
+.visible{
+    display: block !important;
+}
+.disabled{
+    display: none;
 }
 .login__input{
     width: 100%;
