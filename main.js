@@ -4,10 +4,14 @@ const miModulo = (() => {
   'use strict'
 
   // Referencias HTML
-  const contenedorTeclados = document.querySelector('#keyboard-container');
-  const contenedorKeycaps = document.querySelector('#keycaps-container');
-  const contenedorSwitchs = document.querySelector('#switchs-container');
+  const contenedorTeclados  = document.querySelector('#keyboard-container');
+  const contenedorKeycaps   = document.querySelector('#keycaps-container');
+  const contenedorSwitchs   = document.querySelector('#switchs-container');
+  const contenedorName      = document.querySelector('#navbar__name');
+  const user                = localStorage.getItem('user');
+  const loginbtn            = document.querySelector('#login__buton');
 
+  
   // Filtros
   const Filters = {
     All: 'all',
@@ -36,7 +40,7 @@ const miModulo = (() => {
       this.createAt = new Date();
     }
   }
-
+  
   // Storage de keyboardos
   const state = {
     keyboard: [
@@ -79,6 +83,7 @@ const miModulo = (() => {
   }
 
   // Funciones
+  
 
   // Funcion para crear un nuevo producto
   const createProductHTML = (keyboard) => {
@@ -115,6 +120,21 @@ const miModulo = (() => {
   renderProducts(contenedorTeclados, state.keyboard,);
   renderProducts(contenedorKeycaps, state.keycaps, );
   renderProducts(contenedorSwitchs, state.switchs, );
-
-
+  
+  
+  //Funcion para mostrar el nombre del usuario 
+  const loadUserName = (user) => {
+    if(user === null){
+      contenedorName.innerText = '';
+      loginbtn.classList.remove('disabled');
+      return
+    }
+    else{
+      contenedorName.innerText = "Hi " + JSON.parse(user).name;
+      loginbtn.classList.add('disabled');
+      return 
+    }
+    
+  }
+  loadUserName(user);
 })();

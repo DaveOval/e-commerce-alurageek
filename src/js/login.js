@@ -1,4 +1,4 @@
-console.log('hola mundo');
+// console.log('hola mundo');
 
 
 //Referemncias HTML
@@ -84,10 +84,10 @@ function validarPassword(userPassword){
 }
 function habilitarBtn(){
     if(userName.value !== '' &&  userNickName.value !== '' && userEmail.value !== '' && userPassword.value !== '' ){
-        console.log('Boton activado')
+        // console.log('Boton activado')
         btnSubmit.classList.remove('disabled')
     }else{
-        console.log('Boton desativado')
+        // console.log('Boton desativado')
     }
 }
 

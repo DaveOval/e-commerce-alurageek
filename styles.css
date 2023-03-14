@@ -76,6 +76,10 @@ a:focus {
   display: none;
 }
 
+.disabled {
+  display: none;
+}
+
 .navbar__links {
   display: none;
 }
