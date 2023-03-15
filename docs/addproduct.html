@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/keyboard-6b9869ab.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PersonalTyp</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    
+    <script type="module" crossorigin src="./assets/addproduct-391a7523.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="./assets/styles-3fdcfa7a.css">
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a class="material-symbols-outlined navbar__svg" href="./index.html">keyboard_alt</a>
+        <label for="menu" class="checkbox__label">
+          <span class="material-symbols-outlined navbar__svg">menu</span>
+        </label>
+      </div>
+
+
+      <input type="checkbox" name="menu" id="menu" class="checkbox__input">
+
+      
+      
+      <div class="navbar__btns">
+        <a class="navbar__btn" href="./search.html" >
+          <span class="material-symbols-outlined navbar__svg" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on top">search</span>
+        </a>
+        <a class="navbar__btn" href="./login.html" id="login__buton">
+          <span class="material-symbols-outlined navbar__svg">login</span>
+        </a>
+        <p id="navbar__name"></p>
+      </div>
+      </nav>
+
+      <!-- Seccion para agregar productos  -->
+      <div class="add__container">
+        <div class="add__container-inputs">
+            <h1>Add a product to sell</h1>
+            <label>Product title</label>
+            <input type="text">
+            <label>Price</label>
+            <input type="number" max="100" min="0">
+            <label>Img URL</label>
+            <input type="text">
+            <label>Stock</label>
+            <input type="number" max="100" min="0">
+            <label>Type of product</label>
+            <select name="type" id="type">
+              <option value="mechanical">keyboard</option>
+              <option value="membrane">keycaps</option>
+              <option value="hybrid">keycaps</option>
+            </select>
+            <label>Product description</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <button id="add__product">Add product</button>
+        </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+      <!-- footer -->
+      <footer class="footer">
+        <p>Code by <a href="https://github.com/DaveOval">David Vazquez</a></p>
+        <img src="./assets/dave_avatar-4bc61836.svg" alt="david vazquez">
+      </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

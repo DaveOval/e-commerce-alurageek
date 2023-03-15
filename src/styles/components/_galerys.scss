@@ -10,6 +10,7 @@
 .galery__nav{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -69,6 +70,22 @@
     font-weight: 200;
     margin-bottom: 10px;
 }
+.addproduct{
+    margin: 0.1rem 0;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: deepskyblue;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover{
+        transform: scale(1.1);
+
+    }
+}
 
 @media screen and (min-width: 768px){
     .galery__products{
@@ -124,5 +141,8 @@
         a{
             text-align: center;
         }
+    }
+    .addproduct{
+        margin-left: 60vw;
     }
 }

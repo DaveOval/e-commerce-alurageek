@@ -7,6 +7,8 @@
 @import './src/styles/components/login';
 @import './src/styles/components/contact';
 @import './src/styles/components/footer';
+@import './src/styles/components/search';
+@import './src/styles/components/addproduct';
 
   
 //varoables
@@ -97,9 +99,7 @@ ul{
 .home__container1-text-2{
     color: $acent;
 }
-.home__container1-card{
-    background-color: $acent;
-}
+
 
 .product__card{
     background-color: $gray;
@@ -115,7 +115,10 @@ ul{
     }
 }
 .login__form{
-    // background-color: $gray;
+    background-color: $gray;
+}
+.disabled{
+    display: none;
 }
 .login__input{
     

@@ -54,7 +54,10 @@
         height: 50px;
         width: 50px;
         background-size: contain;
+        border: 2px solid white;
         border-radius: 50%;
+        margin-right: .5rem;
+        margin-top: .5rem;
     }
     .home__container1-card{
         display: flex;
@@ -67,7 +70,10 @@
         padding-right: 3rem;
         border-radius: 15px;
         margin-top: 30vh;
-
+        background: rgba( 64, 61, 57, 0.3 );
+        backdrop-filter: blur( 7px );
+        -webkit-backdrop-filter: blur( 7px );
+        border-radius: 10px;
     }
     .home__container1-text-1{
         font-size: 2rem;
@@ -118,6 +124,10 @@
         padding:  2rem;
         transform: translatey(-100%);
         font-weight: 540;
+        background: rgba( 64, 61, 57, 0.3 );
+        backdrop-filter: blur( 7px );
+        -webkit-backdrop-filter: blur( 7px );
+        border-radius: 10px;
     }
     .home__title{
         font-size: 5.0rem;
