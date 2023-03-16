@@ -1,0 +1,1 @@
+import{r,s}from"./storage-a38bb716.js";const e=document.querySelector("#navbar__name"),t=document.querySelector("#login__buton"),n=localStorage.getItem("user"),o=document.querySelector("#switchs-container"),c=()=>{if(n===null){e.innerText="",t.classList.remove("disabled");return}else{e.innerText="Hi "+JSON.parse(n).name,t.classList.add("disabled");return}};c();r(o,s.switchs);

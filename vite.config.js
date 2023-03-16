@@ -18,6 +18,9 @@ export default defineConfig({
                 keyboadsjs: './src/js/keyboards.js',
                 keycaps: './keycaps.html',
                 keycapsjs: './src/js/keycaps.js',
+                switchs: './switchs.html',
+                switchsjs: './src/js/switchs.js',
+                
             }
         },
     }
