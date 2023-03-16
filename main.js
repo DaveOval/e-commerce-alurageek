@@ -20,6 +20,7 @@ console.log('main js enlazado')
   // Funcion para renderizar los productos
   
   // Funcion para crear un nuevo producto
+  loadUserName();
 
   //Esta funcion sirve para renderizar los productos en el DOM
   renderProducts(contenedorTeclados, state.keyboard,);
@@ -29,6 +30,5 @@ console.log('main js enlazado')
   
   //Funcion para mostrar el nombre del usuario 
 
-  loadUserName();
 
   

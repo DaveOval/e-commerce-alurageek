@@ -841,6 +841,31 @@ a:focus {
   color: white;
 }
 
+.keyboards__hero {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../e-commerce/public/assets/background/keyboards-hero.PNG);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.keyboards__title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background: rgba(64, 61, 57, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;

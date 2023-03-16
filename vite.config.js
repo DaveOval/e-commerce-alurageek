@@ -14,6 +14,8 @@ export default defineConfig({
                 searchjs: './src/js/search.js',
                 addproduct: './addproduct.html',
                 addproductjs: './src/js/addproduct.js',
+                keyboards: './keyboards.html',
+                keyboadsjs: './src/js/keyboards.js',
             }
         },
     }

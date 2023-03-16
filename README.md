@@ -6,8 +6,8 @@ para estra pagina se utilizo [GitHub Pages](https://daveoval.github.io/e-commerc
 
 ## Características principales
 
-- [Registrarse en la pagina para agregar productos].
-- [Agregar productos dependiendo de su categoria].
+- Registrarse en la pagina para agregar productos.
+- Agregar productos dependiendo de su categoria.
 
 ## Capturas de pantalla
 
@@ -44,7 +44,7 @@ http://localhost:3000 o el puerto que se te asigno
 
 ## Despliegue
 
-Este proyecto fue desplegado en GitHub Pages. Puedes acceder a la tienda en línea en la siguiente dirección: [https://daveoval.github.io/e-commerce-alurageek/].
+Este proyecto fue desplegado en GitHub Pages. Puedes acceder a la tienda en línea en la siguiente dirección: https://daveoval.github.io/e-commerce-alurageek/.
 
 
 
