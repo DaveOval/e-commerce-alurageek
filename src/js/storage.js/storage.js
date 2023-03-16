@@ -61,7 +61,7 @@ export const state = {
     }else{
       const keyboard = JSON.parse(LSkeyboards);
       const {title, price, img, stock} = keyboard;
-      state.keyboard.push(new Product(title, price, img, stock, 'keyboard'));
+      state.keyboard.unshift(new Product(title, price, img, stock, 'keyboard'));
     }
   }
 
@@ -71,7 +71,7 @@ export const state = {
     }else{
       const keycaps = JSON.parse(LSkeycaps);
       const {title, price, img, stock} = keycaps;
-      state.keycaps.push(new Product(title, price, img, stock, 'keycaps'));
+      state.keycaps.unshift(new Product(title, price, img, stock, 'keycaps'));
     }
   }
 
@@ -81,7 +81,7 @@ export const state = {
     }else{
       const switchs = JSON.parse(LSswitchs);
       const {title, price, img, stock} = switchs;
-      state.switchs.push(new Product(title, price, img, stock, 'switchs'));
+      state.switchs.unshift(new Product(title, price, img, stock, 'switchs'));
     }
   }
 
