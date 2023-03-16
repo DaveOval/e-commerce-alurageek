@@ -16,6 +16,8 @@ export default defineConfig({
                 addproductjs: './src/js/addproduct.js',
                 keyboards: './keyboards.html',
                 keyboadsjs: './src/js/keyboards.js',
+                keycaps: './keycaps.html',
+                keycapsjs: './src/js/keycaps.js',
             }
         },
     }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/keyboard.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keyboards | PersonalTyp</title>
+    <title>Keycaps | PersonalTyp</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
     
@@ -12,17 +12,15 @@
   <body>
     <!-- Menu -->
     <nav class="navbar">
-      <div class="navbar__logo">
-        <a class="material-symbols-outlined navbar__svg" href="./index.html">keyboard_alt</a>
-        <label for="menu" class="checkbox__label">
-          <span class="material-symbols-outlined navbar__svg">menu</span>
-        </label>
-      </div>
-
-
+        <div class="navbar__logo">
+          <a class="material-symbols-outlined navbar__svg" href="./index.html">keyboard_alt</a>
+          <label for="menu" class="checkbox__label">
+            <span class="material-symbols-outlined navbar__svg">menu</span>
+          </label>
+        </div>
+  
       <input type="checkbox" name="menu" id="menu" class="checkbox__input">
 
-      
       
       <div class="navbar__btns">
         <a class="navbar__btn" href="./search.html" >
@@ -35,50 +33,18 @@
       </div>
       </nav>
 
-
-      <section class="keyboards__hero">
-        <h1 class="keyboards__title">Keyboards</h1>
+      <!-- ------------------------ -->
+      <section class="keyboards__hero-keycaps">
+        <h1 class="keyboards__title">Keycaps</h1>
       </section>
-
-      
-
 
       <section class="galery" id="products">
-        <!-- <a href="./addproduct.html" class="addproduct" id="addproductbtn">Add product</a> -->
-        <!-- Teclados --------------------------------->
-        <!-- <div class="galery__nav" id="keyboard">
-          <h1>Keyboards</h1>
-        </div> -->
-        <div class="galery__products" id="keyboard-container">
+        
+          <div class="galery__products" id="keycaps-container">
 
-        </div> 
-         
-        <!-- Keycaps ---------------------------------->
-        <!-- <div class="galery__nav" id="keycaps"> -->
-          <!-- <h2>Keycaps</h2> -->
-          <!-- <a href="#"> -->
-            <!-- <p>see more<span class="material-symbols-outlined arrow" style="color: #eb5e28">arrow_forward</span></p> -->
-          <!-- </a> -->
-        <!-- </div> -->
-          <!-- <div class="galery__products" id="keycaps-container"> -->
-
-          <!-- </div> -->
-
-          <!-- Switchs---------------------------------->
-        <!-- <div class="galery__nav" id="switchs"> -->
-          <!-- <h2>Switchs</h2> -->
-          <!-- <a href="#"> -->
-            <!-- <p>see more<span class="material-symbols-outlined arrow" style="color: #eb5e28">arrow_forward</span></p> -->
-          <!-- </a> -->
-        <!-- </div> -->
-          <!-- <div class="galery__products" id="switchs-container"> -->
-
-          <!-- </div> -->
-
+          </div>
+  
       </section>
-
-
-     
 
       <!-- footer -->
       <footer class="footer">
@@ -89,7 +55,7 @@
 
       
       
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./src/js/keycaps.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

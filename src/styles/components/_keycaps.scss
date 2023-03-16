@@ -1,0 +1,14 @@
+.keyboards__hero-keycaps{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../e-commerce/public/assets/background/keycaps-hero.PNG);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
