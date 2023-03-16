@@ -35,37 +35,37 @@
       </div>
       </nav>
 
-      <!-- Seccion para agregar productos  -->
-      <div class="add__container">
-        <div class="add__container-inputs">
-            <h1>Add a product to sell</h1>
-            <label>Product title</label>
-            <input type="text">
-            <label>Price</label>
-            <input type="number" max="100" min="0">
-            <label>Img URL</label>
-            <input type="text">
-            <label>Stock</label>
-            <input type="number" max="100" min="0">
-            <label>Type of product</label>
-            <select name="type" id="type">
-              <option value="mechanical">keyboard</option>
-              <option value="membrane">keycaps</option>
-              <option value="hybrid">keycaps</option>
-            </select>
-            <label>Product description</label>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            <button id="add__product">Add product</button>
-        </div>
+
       </div>
-
+            <!-- Seccion para agregar productos  -->
+            <div class="add__container">
+              <div class="add__container-inputs">
+                  <h1>Add a product to sell</h1>
+                  <label>Product title</label>
+                  <input type="text" id="productTitle">
       
-
-
-
-
-
-
+                  <label>Price</label>
+                  <input type="number" max="5" min="0" id="productPrice" maxlength="4">
+      
+                  <label>Img URL</label>
+                  <input type="text" id="productIMG">
+      
+                  <label>Stock</label>
+                  <input type="number" max="100" min="0" id="productStock">
+      
+                  <label>Type of product</label>
+                  <select name="type" id="productType">
+                    <option value="keyboard">keyboard</option>
+                    <option value="keycaps">keycaps</option>
+                    <option value="swtichs">Switchs</option>
+                  </select>
+      
+                  <label>Product description</label>
+                  <textarea name="description" cols="30" rows="10" id="productDescription"></textarea>
+      
+                  <button id="addbtn">Add product</button>
+              </div>
+            </div>
 
       <!-- footer -->
       <footer class="footer">

@@ -13,6 +13,7 @@ export default defineConfig({
                 search: './search.html',
                 searchjs: './src/js/search.js',
                 addproduct: './addproduct.html',
+                addproductjs: './src/js/addproduct.js',
             }
         },
     }
